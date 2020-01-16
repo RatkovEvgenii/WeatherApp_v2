@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="primary_color">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background_color">@color/colorBackground</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="card_color">@color/colorBackground</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark application theme. -->
+    <style name="Dark" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="primary_color">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background_color">@color/colorBackgroundDark</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="text_color">@color/colorBackground</item>
+        <item name="android:textColorHint">@color/colorBackground</item>
+        <item name="card_color">@color/colorLightGrey</item>
+        <item name="android:alertDialogTheme">@style/dark_alert_dialog_theme</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="imageButton">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="dark_alert_dialog_theme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@color/colorBackgroundDark</item>
+    </style>
+
+</resources>
